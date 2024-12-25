@@ -41,28 +41,26 @@ const Index = () => {
         }`}
       >
         <nav className="flex container p-6 justify-between items-center">
-          <a href="/" className="text-2xl font-bold gradient-text">
+          <Link to="/" className="text-2xl font-bold gradient-text">
             Muzer
-          </a>
+          </Link>
           <div className="flex gap-6">
-          <a
-              href="/about"
+            <Link
+              to="/about"
               className="text-sm font- tracking-wide hover:text-muted-foreground transition-colors"
             >
               About
-            </a>
-            <a
-              href="#features"
+            </Link>
+            <a href="#features"
               className="text-sm font- tracking-wide hover:text-muted-foreground transition-colors"
             >
               Features
             </a>
-            <a
-              href="/waitlist"
+            <Link to="/waitlist"
               className="text-sm font- tracking-wide hover:text-muted-foreground transition-colors"
             >
               Join Waitlist
-            </a>
+            </Link>
           </div>
         </nav>
       </header>
@@ -132,7 +130,6 @@ const Index = () => {
             <LucideMonitorSpeaker className="text-blue-600" /> Modern Offices
           </span>
           <span className="flex items-center gap-2 text-left">
-            
             <Users className="text-green-600" /> Friend Groups
           </span>
           <span className="flex items-center gap-2 text-left">
@@ -146,9 +143,9 @@ const Index = () => {
       <footer className="bg-black text-white py-12 mt-auto">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-8 border-t border-white/10 pt-8">
           <div className="flex items-center gap-4">
-            <a href="/" className="text-2xl font-bold gradient-text">
+            <Link to="/" className="text-2xl font-bold gradient-text">
               Muzer
-            </a>
+            </Link>
           </div>
           <div className="text-sm text-gray-400">
             © {new Date().getFullYear()} Muzer. All rights reserved.
@@ -188,24 +185,24 @@ const Index = () => {
             >
               Features
             </a>
-            <a
-              href="/waitlist"
+            <Link
+              to="/waitlist"
               className="text-sm text-gray-400 hover:text-white transition-colors"
             >
               Join Waitlist
-            </a>
-            <a
-              href="#contact"
+            </Link>
+            <Link
+              to="#contact"
               className="text-sm text-gray-400 hover:text-white transition-colors"
             >
               Contact
-            </a>
-            <a
-              href="about"
+            </Link>
+            <Link
+              to="about"
               className="text-sm text-gray-400 hover:text-white transition-colors"
             >
               About Us
-            </a>
+            </Link>
           </div>
           <div className="text-sm text-gray-400 text-center md:text-left">
             <a
